@@ -20,6 +20,12 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+-= Deployment Command =-
+$ git push heroku
+$ heroku pg:reset DATABASE
+$ heroku run rake db:migrate
+$ heroku run rake db:seed
+$ heroku restart
 
 * ...
 
